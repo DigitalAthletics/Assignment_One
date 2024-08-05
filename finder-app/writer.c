@@ -9,7 +9,6 @@ int main(int arg, char** data)
 {
     const char* writefile;
     const char* writestr;
-    writefile = "";
     
     //data[1] is path, data[2] is text, arg is not used
     if (data[1] != NULL && data[2] != NULL)
