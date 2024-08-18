@@ -138,5 +138,7 @@ cd "$OUTDIR/rootfs"
 find . | cpio -H newc -ov --owner root:root > ${OUTDIR}/initramfs.cpio
 
 # TODO: Create initramfs.cpio.gz
-echo "Create initramfs.cpio.gz"
-gzip -f ${OUTDIR}/initramfs.cpio.gz
+echo "Create initramfs.cpio.gz at:"
+echo ${OUTDIR}
+cd ${OUTDIR}
+gzip -f ${OUTDIR}/initramfs.cpio
